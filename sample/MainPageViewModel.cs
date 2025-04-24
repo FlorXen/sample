@@ -106,7 +106,8 @@ public partial class MainPageViewModel : ObservableObject
                 {
                     EventIndicatorColor = clr,
                     EventIndicatorSelectedColor = clr,
-                    EventIndicatorSelectedTextColor = clr
+                    EventIndicatorSelectedTextColor = clr,
+                    Colors = [Color.Parse(e.color)]
                 });
             }
             else if (Events[e.date] is DayEventCollection<CalendarEvent> eventList)
